@@ -1,11 +1,15 @@
 {
   "name": "timer.js",
   "version": "1.0.0",
+  "repository": "https://github.com/JuSenpai/timer.js",
   "description": "A light library used for measuring how much time functions take to be executed.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cosmin STOICA",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }

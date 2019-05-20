@@ -11,12 +11,4 @@ const timer = (callback, ...args) => {
     });
 };
 
-const delay = amount => new Promise(resolve => setTimeout(resolve, amount));
-
-timer(() => delay(1000)).then(res => {
-    console.log(res);
-});
-
-timer(() => 21).then(res => {
-    console.log(res);
-});
+module.exports = timer;
