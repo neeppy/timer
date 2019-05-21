@@ -4,6 +4,7 @@
   "repository": "https://github.com/JuSenpai/js-timer",
   "description": "A lightweight library capable of measuring how much time a callback requires to execute.",
   "main": "index.js",
+  "keywords": ["timer", "js-timer"],
   "scripts": {
     "test": "jest"
   },
