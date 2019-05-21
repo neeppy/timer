@@ -1,4 +1,4 @@
-timer.js
+JS Timer
 ---
 
 A lightweight library capable of measuring how much time a callback requires to execute.
