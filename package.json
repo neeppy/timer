@@ -1,6 +1,6 @@
 {
   "name": "@jusenpai/timer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": "https://github.com/JuSenpai/timer",
   "description": "A lightweight library capable of measuring how much time a callback requires to execute.",
   "main": "index.js",
