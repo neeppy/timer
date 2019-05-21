@@ -1,4 +1,4 @@
-JS Timer
+Timer
 ---
 
 A lightweight library capable of measuring how much time a callback requires to execute.
@@ -7,7 +7,7 @@ Installation
 ---
 
 ```
-npm install --save timer.js
+npm install --save @jusenpai/timer
 ```
 
 Usage
@@ -15,7 +15,7 @@ Usage
 
 It works with synchronous functions:
 ```js
-const timer = require('timer.js');
+const timer = require('@jusenpai/timer');
 
 function sum(x, y) {
     return x + y;
@@ -33,7 +33,7 @@ timer(sum, 10, 12)
 
 It also works with promises:
 ```js
-const timer = require('timer.js');
+const timer = require('@jusenpai/timer');
 
 function fetchData() {
     return new Promise(resolve => {
