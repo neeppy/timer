@@ -1,8 +1,8 @@
 {
-  "name": "timer.js",
+  "name": "js-timer",
   "version": "1.0.0",
-  "repository": "https://github.com/JuSenpai/timer.js",
-  "description": "A light library used for measuring how much time functions take to be executed.",
+  "repository": "https://github.com/JuSenpai/js-timer",
+  "description": "A lightweight library capable of measuring how much time a callback requires to execute.\n\n",
   "main": "index.js",
   "scripts": {
     "test": "jest"
