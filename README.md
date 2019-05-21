@@ -49,6 +49,6 @@ timer(fetchData)
         console.log(result.time); 
         
         // will be our fetched data
-        console.log(value);
+        console.log(result.value);
     });
 ```
