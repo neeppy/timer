@@ -35,11 +35,18 @@ describe('Timer', () => {
             });
     });
 
-    it ('Passes args to the callback', () => {
+    it('Passes args to the callback', () => {
         return timer((x, y) => x + y, 2, 10)
             .then(result => {
                 expect(result.value).toBe(12);
                 expect(result.time).toBeLessThan(20);
+            });
+    });
+
+    it('Also times the rejected promise', () => {
+        return timer(() => Promise.reject('asdf'))
+            .catch(result => {
+                expect(result.error).toBe('asdf');
             });
     });
 });

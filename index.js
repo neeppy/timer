@@ -8,13 +8,21 @@ const timer = (callback, ...args) => {
     const start = new Date().getTime();
     const value = callback && callback(...args);
 
-    return Promise.resolve(value).then(res => {
-        const stop = new Date().getTime();
-        return {
-            value: res,
-            time: stop - start,
-        };
-    });
+    return Promise.resolve(value)
+        .then(res => {
+            const stop = new Date().getTime();
+            return {
+                value: res,
+                time: stop - start,
+            };
+        })
+        .catch(err => {
+            const stop = new Date().getTime();
+            throw {
+                error: err,
+                time: stop - start
+            };
+        });
 };
 
 module.exports = timer;
